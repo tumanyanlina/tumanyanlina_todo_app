@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Мои задачи</h1>
+
+    <!-- Фильтры категорий -->
+    <div class="category-filters">
+      <button class="category-btn active" data-category="Все">Все</button>
+      <button class="category-btn" data-category="Работа">Работа</button>
+      <button class="category-btn" data-category="Учёба">Учёба</button>
+      <button class="category-btn" data-category="Дом">Дом</button>
+      <button class="category-btn" data-category="Личное">Личное</button>
+    </div>
+
+    <!-- Ввод новой задачи -->
+    <div class="top-panel">
+      <input id="taskInput" type="text" placeholder="Новая задача...">
+      <select id="categorySelect">
+        <option value="Работа">Работа</option>
+        <option value="Учёба">Учёба</option>
+        <option value="Дом">Дом</option>
+        <option value="Личное">Личное</option>
+      </select>
+      <button id="addBtn">Добавить</button>
+    </div>
+
+    <!-- Поиск -->
+    <div class="top-panel">
+      <input id="searchInput" type="text" placeholder="Поиск задачи...">
+    </div>
+
+    <!-- Панель фильтра по статусу -->
+    <div class="filter-panel">
+      <button id="filterIncompleteBtn">Невыполненные</button>
+    </div>
+
+    <!-- Список задач -->
+    <ul id="taskList"></ul>
+
+    <!-- Нижняя панель -->
+    <div class="bottom-panel">
+      <button id="themeBtn">Тема</button>
+      <button id="fontBtn">Aa</button>
+      <button id="clearBtn">Очистить все</button>
+    </div>
+
+    <!-- Панель выбора шрифта -->
+    <div class="font-panel" id="fontPanel">
+      <label>Шрифт:
+        <select id="fontSelect">
+          <option value="'Segoe UI', sans-serif">Segoe UI</option>
+          <option value="'Georgia', serif">Georgia</option>
+          <option value="'Courier New', monospace">Courier New</option>
+          <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+          <option value="'Times New Roman', serif">Times New Roman</option>
+        </select>
+      </label>
+      <label>Размер:
+        <select id="fontSizeSelect">
+          <option value="14px">14px</option>
+          <option value="16px">16px</option>
+          <option value="18px">18px</option>
+          <option value="20px">20px</option>
+        </select>
+      </label>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
